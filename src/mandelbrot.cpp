@@ -47,41 +47,41 @@ int main(int argc, char* argv[])
   }
   catch (...)
   {
-    std::cerr << "Blad: nieprawidlowe argumenty.\n";
+    std::cerr << "Error: incorrect arguments.\n";
     return 1;
   }
 
   if (threadCount <= 0)
   {
-    std::cerr << "Liczba rdzeni musi byc > 0.\n";
+    std::cerr << "Number of cores must be > 0.\n";
     return 1;
   }
 
 
   if (size <= 0)
   {
-    std::cerr << "Rozmiar musi byc > 0.\n";
+    std::cerr << "Size must be > 0.\n";
     return 1;
   }
 
 
   if (iterations <= 0)
   {
-    std::cerr << "Liczba iteracji musi byc > 0.\n";
+    std::cerr << "Iteration count must be > 0.\n";
     return 1;
   }
 
 
   if (save != 0 && save != 1)
   {
-    std::cerr << "Parametr zapisu musi byc 0 albo 1.\n";
+    std::cerr << "Save parameter must be 0 or 1.\n";
     return 1;
   }
 
 
   if (previewSize <= 0)
   {
-    std::cerr << "Rozmiar podgladu musi byc > 0.\n";
+    std::cerr << "Preview size must be > 0.\n";
     return 1;
   }
 
