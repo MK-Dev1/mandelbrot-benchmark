@@ -1,2 +1,4 @@
+.vscode/
 mandelbrot_output.txt
 mandelbrot
+*.o
