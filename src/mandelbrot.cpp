@@ -134,17 +134,9 @@ int main(int argc, char* argv[])
 
   double seconds = std::chrono::duration<double>(end - start).count();
 
-  std::cout << "Rdzenie/watki: " << threadCount << "\n";
+  std::cout << "Render time: " << seconds << " s\n";
 
-  std::cout << "Rozmiar: " << size << " x " << size << "\n";
-
-  std::cout << "Punktow w jednej linii: " << size << "\n";
-
-  std::cout << "Liczba punktow: " << static_cast<long long>(size) * static_cast<long long>(size) << "\n";
-
-  std::cout << "Iteracje: " << iterations << "\n";
-
-  std::cout << "Czas renderowania: " << seconds << " s\n";
+  std::cout << "Score: " << 5800/seconds << " s\n";
 
 
   if (save == 1)
@@ -158,7 +150,7 @@ int main(int argc, char* argv[])
 
     if (!file)
     {
-      std::cerr << "Nie mozna otworzyc " << "mandelbrot_output.txt\n";
+      std::cerr << "Cant open " << "mandelbrot_output.txt\n";
       return 1;
     }
 
@@ -189,10 +181,6 @@ int main(int argc, char* argv[])
 
 
     file.close();
-
-    std::cout << "Zapisano obraz: " << "mandelbrot_output.txt\n";
-
-    std::cout << "Rozmiar podgladu: " << outputSize << " x " << outputSize << "\n";
   }
   return 0;
 }
