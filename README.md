@@ -1,6 +1,6 @@
-# Mandelbrot Benchmark [Not finished]
+# Mandelbrot Benchmark
 A lightweight cli tool that i made while upgrading my CPU to test how much of an upgrade it was.  
-Right now its CLI ONLY. I will add GUI later.  
+Right now its CLI ONLY. GUI will be added soon.  
 
 To compile use make command.  
 
