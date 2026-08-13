@@ -9,6 +9,8 @@
 
 #include "config.h"
 #include "renderline.h"
+#include "saveimage.h"
+
 
 
 int main(int argc, char* argv[])
@@ -138,49 +140,25 @@ int main(int argc, char* argv[])
 
   std::cout << "Score: " << 7500/seconds << "\n";
 
-
   if (save == 1)
   {
     int outputSize = previewSize;
 
     if (outputSize > size)
-      outputSize = size;
+        outputSize = size;
 
-    std::ofstream file("mandelbrot_output.txt");
-
-    if (!file)
+    if (!saveImage(
+            "mandelbrot_output.png",
+            pixels,
+            size,
+            outputSize))
     {
-      std::cerr << "Cant open " << "mandelbrot_output.txt\n";
-      return 1;
+        std::cerr << "Cant save mandelbrot_output.png\n";
+        return 1;
     }
 
-    for (int py = 0; py < outputSize; py++)
-    {
-      int sourceY = py * size / outputSize;
-
-      for (int px = 0; px < outputSize; px++)
-      {
-        int sourceX = px * size / outputSize;
-
-        uint32_t pixel = pixels[static_cast<size_t>(sourceY) * size + sourceX];
-
-        uint8_t r = (pixel >> 16) & 255;
-
-        uint8_t g = (pixel >> 8) & 255;
-
-        uint8_t b = pixel & 255;
-
-        file << static_cast<int>(r) << " " << static_cast<int>(g) << " " << static_cast<int>(b);
-
-        if (px != outputSize - 1)
-          file << " ";
-      }
-
-      file << "\n";
-    }
-
-
-    file.close();
+    std::cout << "Saved mandelbrot_output.png\n";
   }
+
   return 0;
 }
