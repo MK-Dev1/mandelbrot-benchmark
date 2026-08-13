@@ -136,7 +136,7 @@ int main(int argc, char* argv[])
 
   std::cout << "Render time: " << seconds << " seconds\n";
 
-  std::cout << "Score: " << 6000/seconds << "\n";
+  std::cout << "Score: " << 7500/seconds << "\n";
 
 
   if (save == 1)
