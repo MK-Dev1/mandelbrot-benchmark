@@ -134,9 +134,9 @@ int main(int argc, char* argv[])
 
   double seconds = std::chrono::duration<double>(end - start).count();
 
-  std::cout << "Render time: " << seconds << " s\n";
+  std::cout << "Render time: " << seconds << " seconds\n";
 
-  std::cout << "Score: " << 5800/seconds << "\n";
+  std::cout << "Score: " << 6000/seconds << "\n";
 
 
   if (save == 1)
