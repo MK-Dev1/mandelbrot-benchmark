@@ -1,5 +1,5 @@
 .vscode/
 venv/
-mandelbrot_output.txt
+mandelbrot_output.png
 mandelbrot
 *.o
