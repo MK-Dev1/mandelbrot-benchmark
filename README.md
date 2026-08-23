@@ -14,6 +14,3 @@ CLI usage:
 [i] - max iteration number  
 [p] - 1-generate preview 0-dont generate preview  
 [ps] - size of preview  
-
-This version is just for testing.  
-Preview is saved into txt file for now.  
