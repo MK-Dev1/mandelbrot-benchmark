@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Very low",
+        "size": 200,
+        "iter": 50
+    },
+    {
+        "name": "Low",
+        "size": 300,
+        "iter": 150
+    },
+    {
+        "name": "Medium",
+        "size": 600,
+        "iter": 450
+    },
+    {
+        "name": "High",
+        "size": 1000,
+        "iter": 600
+    },
+    {
+        "name": "Extreme",
+        "size": 3000,
+        "iter": 2500
+    }
+]
