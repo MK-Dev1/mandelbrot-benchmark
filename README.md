@@ -7,6 +7,7 @@ Presets in GUI doesnt work yet
 To compile use make command.  
 
 
+
 CLI usage:  
 ./mandelbrot [c] [s] [i] [p] [ps]  
 [c] - number of cores to use  
