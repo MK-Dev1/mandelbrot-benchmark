@@ -18,7 +18,6 @@ If you want to install manually here is list of requirements:
   - g++  
 <br/>
 
-````md
 To install manually you can use this command (works on Debian-based distros):
 
 ```bash
