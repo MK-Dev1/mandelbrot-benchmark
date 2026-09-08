@@ -21,7 +21,7 @@ To install manually you can use this command: [works on debian based distros]
 ```bash
 sudo apt install make g++ libboost-all-dev
 ```
-<b>To use gui you will also need python with customtkinter libary installed<b/>  
+<b>To use gui you will also need python with customtkinter libary installed</b>  
 
 ### Compiling CLI [gui version also requires it]
 To compile use make command in main folder.  
