@@ -12,16 +12,16 @@ To automatically install required packages run requirements/install.py
 ```bash
 python3 requirements/install.py
 ```
-<br/><br/>
 If you want to install manually here is list of requirements:  
   - make  
   - libboost-all-dev [may be named differently on different distros]  
   - g++  
+<br/>
 To install manually you can use this command: [works on debian based distros]  
 ```bash
 sudo apt install make g++ libboost-all-dev
 ```
-To use gui you will also need python with customtkinter libary installed  
+<b>To use gui you will also need python with customtkinter libary installed<b/>  
 
 ### Compiling CLI [gui version also requires it]
 To compile use make command in main folder.  
