@@ -1,0 +1,54 @@
+{
+  "debian": {
+    "manager": "apt",
+    "packages": [
+      "libboost-all-dev",
+      "build-essential"
+    ]
+  },
+
+  "fedora": {
+    "manager": "dnf",
+    "packages": [
+      "boost-devel",
+      "gcc-c++",
+      "make"
+    ]
+  },
+
+  "arch": {
+    "manager": "pacman",
+    "packages": [
+      "boost",
+      "gcc",
+      "make"
+    ]
+  },
+
+  "opensuse": {
+    "manager": "zypper",
+    "packages": [
+      "boost-devel",
+      "gcc-c++",
+      "make"
+    ]
+  },
+
+  "alpine": {
+    "manager": "apk",
+    "packages": [
+      "boost-dev",
+      "gcc",
+      "g++",
+      "make"
+    ]
+  },
+
+  "macos": {
+    "manager": "brew",
+    "packages": [
+      "boost"
+    ]
+  }
+}
+
