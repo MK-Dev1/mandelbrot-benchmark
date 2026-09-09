@@ -49,3 +49,5 @@ CLI usage:
 [i] - max iteration number  
 [p] - 1-generate preview 0-dont generate preview  
 [ps] - size of preview  
+
+[GUI usage soon. im working on it]
