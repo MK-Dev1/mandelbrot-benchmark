@@ -62,30 +62,24 @@ canvas = tk.Canvas(
 canvas.place(x=0, y=0)
 
 
+def click(preset_id):
+  preset = config[preset_id]
 
-def pokaz_tekst():
-    tekst = entry.get()
-    label.configure(text=tekst)
+  size = int(preset["size"])
+  max_iter = int(preset["iter"])
 
+  size_entry.delete(0, "end")
+  size_entry.insert(0, str(size))
+  size_slider.set(size)
 
-def ustaw_wszystko():
-    label.configure(text="Ustawiono wszystko!")
+  iter_entry.delete(0, "end")
+  iter_entry.insert(0, str(max_iter))
+  iter_slider.set(max_iter)
 
-    entry.delete(0, "end")
-    entry.insert(0, "Tekst ustawiony przez kod")
-
-    switch.select()
-
-    slider.set(80)
-
-
-def zmiana_suwaka(wartosc):
-    label_slider.configure(
-        text=f"Suwak: {int(wartosc)}"
-    )
-
-def click(button_id):
-  print("button " + str(button_id) + " pressed")
+  print(
+    f"Preset '{preset['name']}' selected: "
+    f"size={size}, iter={max_iter}"
+  )
 
 
 
@@ -214,6 +208,7 @@ for i in range(presets_count):
     y=70+50*i
   )
   buttons.append(button)
+
 
 
 
