@@ -4,7 +4,7 @@ Its just a lightweight cli tool that i made while upgrading my CPU to test how m
 [I don't think anyone will ever use this, but if you need a program like this, I'm happy you found what you were looking for.]
 
 GUI works but still needs work  
-Presets in GUI doesnt work yet  
+Presets in GUI in are being tested now
 
 
 ## Installation
