@@ -1,7 +1,7 @@
 # Mandelbrot Benchmark
 ## Lightweight cli tool for benchmarking cpu [now with gui]
 Its just a lightweight cli tool that i made while upgrading my CPU to test how much of an upgrade it was.  
-[I don't think anyone will ever use this, but if you need a program like this, I'm happy you found what you were looking for.]
+[I don't think anyone will ever use this, but if you want a quick way to test your cpu then I'm happy you found what you were looking for.]
 
 GUI works but still needs work  
 Presets in GUI are being tested now
@@ -9,7 +9,8 @@ Presets in GUI are being tested now
 
 ## Installation
 ### Requirements:  
-To automatically install required packages run requirements/install.py  
+To automatically install required packages run requirements/install.py script  
+[It was only tested on debian based systems but should also support other distros]  
 ```bash
 python3 requirements/install.py
 ```
@@ -28,7 +29,7 @@ sudo apt install make g++ libboost-all-dev
 **To use the GUI, you will also need Python with the CustomTkinter library installed.**
 
 ### Download code
-Use this command to download code
+Use this command to download code from this repo
 ```bash
 git clone https://github.com/MK-Dev1/mandelbrot-benchmark.git
 ```
