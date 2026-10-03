@@ -157,7 +157,12 @@ def start_test():
 
   print("Scores:", scores)
   print("Average:", average_score)
-  print("Output:", output_lines)
+  print("Outputs:")
+  for i in range(repeat):
+    print(str(i+1) + ".")
+    print(output_lines[i*3])
+    print(output_lines[i*3+1])
+    print(output_lines[i*3+2] + "\n")
 
   status.configure(
     text=f"Done!\nYour CPU scored {average_score:.3f} points"
