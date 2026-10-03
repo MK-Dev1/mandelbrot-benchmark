@@ -6,8 +6,9 @@ Its just a lightweight cli tool that i made while upgrading my CPU to test how m
 GUI works but still needs work  
 Presets in GUI are being tested now
 
-For now when you run a test with gui it will run on 16 threads on default  
-only way to change it is in code. I will change it in the future  
+For now test always runs on all cpu threads.  
+Option to set amount of threads to use will  
+be added in the future.  
 
 ## Installation
 ### Requirements:  

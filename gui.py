@@ -1,5 +1,6 @@
 import customtkinter as ctk
 import tkinter as tk
+import os
 import sys
 import json
 import subprocess
@@ -119,7 +120,7 @@ def start_test():
   output_lines.clear()
   scores.clear()
 
-  cores = 16
+  cores = os.cpu_count()
   size = int(size_entry.get())
   max_iter = int(iter_entry.get())
   repeat = int(num_entry.get())
